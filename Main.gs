@@ -118,6 +118,7 @@ function showContactGroups() {
 /////////////////////////////////////////////////////////////////////////////////////
 
 function addContactFromTrigger() {
+  //GmailApp.sendEmail("roboticaeuiti@gmail.com", "Script autoContacts", "El script se ha activado y ha iniciado, debería llegar otro email confirmando que se ha completado");
   Utilities.sleep(500);
   var sheet = SpreadsheetApp.getActiveSheet();
   SpreadsheetApp.flush();
@@ -140,7 +141,7 @@ function addContactFromTrigger() {
   }
   Logger.log("Fila de escritura = "+active_row);
   
-  addContactFromRow(active_row-1); // Bro por qué unas cosas las hacen de una forma y otras de otra
+  addContactFromRow(active_row);
 }
 
 function CreadorDelActivador() {
